@@ -106,3 +106,72 @@ footer a:hover {
 }
 
 }
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+article {
+    padding: 20px;
+    margin: 10px;
+}
+
+/* For screens smaller than 768px (typical mobile size) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 10px;
+    }
+    
+    header h1 {
+        font-size: 24px; /* Smaller heading for mobile */
+    }
+    
+    article {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+/* For very small screens (like small phones) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px; /* Further decrease font size */
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    article {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+body {
+    line-height: 1.8; /* More space between lines of text */
+    font-size: 16px; /* Base font size for larger screens */
+}
+
+/* Adjusting line spacing for smaller screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust font size */
+        line-height: 1.6; /* Adjust line height for better readability */
+    }
+}
