@@ -1,84 +1,85 @@
 /* style.css */
 
-/* Reset */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
+/* BODY */
 body {
     font-family: 'Georgia', serif;
-    line-height: 1.8;
+    line-height: 1.9;
     background-color: #f9f9f9;
     color: #222;
     padding: 30px;
-    font-size: 16px; /* Base font size for larger screens */
+    font-size: 18px; /* larger base font for desktop */
 }
 
-/* Header */
+/* HEADER */
 header {
     background-color: #34495e;
     color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Header Title */
-h1 {
-    font-size: 2em;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     text-align: center;
 }
 
-/* Article Content */
-article {
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+header h1 {
+    font-size: 2.5em;
 }
 
-/* Headings */
-h2 {
-    font-size: 1.6em;
+/* ARTICLE CONTENT */
+article {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
     color: #2c3e50;
-    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
     margin-top: 25px;
+    margin-bottom: 15px;
     border-bottom: 2px solid #ecf0f1;
     padding-bottom: 5px;
 }
 
 h3 {
-    font-size: 1.3em;
-    color: #34495e;
+    font-size: 1.6em;
     margin-top: 20px;
 }
 
-/* Paragraphs */
+/* PARAGRAPHS */
 p {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     text-align: justify;
+    font-size: 1.125em;
 }
 
-/* Emphasized text */
 em {
     font-style: italic;
     color: #7f8c8d;
 }
 
-/* Strong */
 strong {
     color: #2c3e50;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
     margin-top: 30px;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 0.95em;
 }
 
 footer a {
@@ -90,14 +91,14 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Back to home button */
+/* BACK LINK BUTTON */
 .back-link {
     display: inline-block;
     margin-top: 30px;
-    padding: 10px 20px;
+    padding: 12px 25px;
     background-color: #2c3e50;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -109,68 +110,94 @@ footer a:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+/* ARTICLE LIST (Homepage Cards) */
+.article-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-header, footer {
-    text-align: center;
-    padding: 20px;
+.article-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-article {
-    padding: 20px;
-    margin: 10px;
+.article-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
-/* For screens smaller than 768px (typical mobile size) */
+.article-card a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.article-card a:hover {
+    color: #3498db;
+}
+
+.article-card .preview {
+    margin-top: 8px;
+    color: #555;
+    font-style: italic;
+    font-size: 1em;
+}
+
+/* RESPONSIVE: Tablets */
 @media (max-width: 768px) {
     body {
-        font-size: 14px; /* Adjust font size for smaller screens */
-        padding: 10px;
-    }
-    
-    header h1 {
-        font-size: 24px; /* Smaller heading for mobile */
-    }
-    
-    article {
-        padding: 15px;
+        font-size: 16px;
+        line-height: 1.8;
+        padding: 20px;
     }
 
-    footer {
-        padding: 15px;
+    header h1 {
+        font-size: 2em;
+    }
+
+    article {
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    .article-card {
+        padding: 20px;
+    }
+
+    .article-card a {
+        font-size: 1.2em;
     }
 }
 
-/* For very small screens (like small phones) */
+/* RESPONSIVE: Small Phones */
 @media (max-width: 480px) {
     body {
-        font-size: 12px; /* Further decrease font size */
+        font-size: 14px;
     }
 
     header h1 {
-        font-size: 20px;
+        font-size: 1.8em;
     }
 
     article {
-        padding: 10px;
+        padding: 20px;
     }
 
     footer {
         font-size: 12px;
-        padding: 10px;
-    }
-}
-
-/* Adjusting line spacing for smaller screens */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px; /* Adjust font size */
-        line-height: 1.6; /* Adjust line height for better readability */
     }
 }
