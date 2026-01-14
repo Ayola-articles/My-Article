@@ -5,50 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Articles</title>
+
     <style>
+        /* GENERAL STYLING */
         body {
             font-family: 'Georgia', serif;
-            background-color: #f9f9f9;
+            background: #f7f8fa;
             color: #222;
-            padding: 30px;
+            padding: 30px 20px;
+            margin: 0;
         }
 
         h1 {
             text-align: center;
-            color: #34495e;
-            margin-bottom: 30px;
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 40px;
         }
 
+        /* ARTICLE LIST CONTAINER */
         .article-list {
             display: flex;
             flex-direction: column;
-            gap: 15px;
-            max-width: 600px;
+            gap: 25px;
+            max-width: 800px;
             margin: 0 auto;
         }
 
+        /* ARTICLE CARD */
         .article-card {
             background: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
         .article-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transform: translateY(-4px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
         }
 
         .article-card a {
             text-decoration: none;
             color: #2c3e50;
             font-weight: bold;
-            font-size: 1.1em;
+            font-size: 1.3em;
         }
 
         .article-card a:hover {
             color: #3498db;
+        }
+
+        /* PREVIEW TEXT */
+        .preview {
+            margin-top: 8px;
+            color: #555;
+            font-style: italic;
+            font-size: 1em;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+                margin-bottom: 30px;
+            }
+
+            .article-card {
+                padding: 20px;
+            }
+
+            .article-card a {
+                font-size: 1.2em;
+            }
         }
     </style>
 </head>
@@ -57,12 +91,20 @@
     <h1>My Articles</h1>
 
     <div class="article-list">
+        <!-- ARTICLE 1 -->
         <div class="article-card">
-            <a href="article1.html">Article 1: Section 29 of the Constitution of South Africa 1996</a>
+            <a href="article1.html" target="_blank">Section 29 of the Constitution of South Africa 1996</a>
+            <p class="preview">A detailed analysis of Section 29, the right to education, and how Ubuntu principles shape our legal obligations and societal development.</p>
         </div>
+
+        <!-- ARTICLE 2 -->
         <div class="article-card">
-            <a href="matric-opinion.html">Record Passes, Fragile Promises</a>
+            <a href="matric-opinion.html" target="_blank">Record Passes, Fragile Promises</a>
+            <p class="preview">Exploring South Africa's record matric pass rate: inequality, economic capacity, and the hidden cost of celebration.</p>
         </div>
+
+        <!-- ADD MORE ARTICLES HERE -->
+        <!-- Copy the div.article-card block and update the title, link, and preview -->
     </div>
 
 </body>
