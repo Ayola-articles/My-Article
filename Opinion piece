@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Record Passes, Fragile Promises</title>
+
+  <!-- Meta for sharing -->
+  <meta name="description" content="An opinion piece interrogating South Africa’s matric results, inequality, and economic capacity." />
+  <meta property="og:title" content="Record Passes, Fragile Promises" />
+  <meta property="og:description" content="What South Africa’s matric results really reveal about inequality and pressure." />
+
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.7;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #111;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #111;
+      padding: 0.8rem 1.5rem;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      margin-right: 1rem;
+      text-decoration: none;
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+
+    nav a:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    header {
+      padding: 5rem 2rem;
+      text-align: center;
+      background: linear-gradient(to bottom, #111, #222);
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      max-width: 750px;
+      margin: 0 auto;
+      font-size: 1.15rem;
+      opacity: 0.9;
+    }
+
+    .cta {
+      margin-top: 2rem;
+    }
+
+    .cta a {
+      background: #fff;
+      color: #111;
+      padding: 0.7rem 1.2rem;
+      text-decoration: none;
+      font-size: 0.9rem;
+      border-radius: 4px;
+      margin: 0 0.5rem;
+    }
+
+    main {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    section {
+      margin-bottom: 5rem;
+      scroll-margin-top: 80px;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .image-placeholder {
+      width: 100%;
+      height: 300px;
+      background: #e0e0e0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem 0;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .evidence {
+      background: #fff;
+      border-left: 5px solid #111;
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      font-size: 0.95rem;
+    }
+
+    .evidence a {
+      color: #111;
+      text-decoration: underline;
+    }
+
+    .quote {
+      font-size: 1.2rem;
+      margin: 3rem 0;
+      padding-left: 1.5rem;
+      border-left: 4px solid #111;
+      font-style: italic;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      padding: 3rem 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#intro">Introduction</a>
+  <a href="#quintiles">Quintiles</a>
+  <a href="#easterncape">Eastern Cape</a>
+  <a href="#maths">Mathematics</a>
+  <a href="#economy">Economy</a>
+  <a href="#ai">AI</a>
+  <a href="#conclusion">Conclusion</a>
+</nav>
+
+<header>
+  <h1>Record Passes, Fragile Promises</h1>
+  <p>
+    South Africa’s record matric results are being celebrated nationwide. This piece asks whether
+    the system is producing opportunity, or merely postponing crisis.
+  </p>
+  <div class="cta">
+    <a href="#intro">Start Reading</a>
+    <a href="#conclusion">Skip to Conclusion</a>
+  </div>
+</header>
+
+<main>
+
+<section id="intro">
+  <h2>Introduction</h2>
+  <p>
+    An 88 percent matric pass rate dominates headlines and political speeches. Yet celebration without
+    interrogation risks mistaking pressure for progress.
+  </p>
+  <div class="image-placeholder">Insert national pass rate headline or DBE infographic</div>
+</section>
+
+<section id="quintiles">
+  <h2>When Volume Masquerades as Equality</h2>
+  <p>
+    Quintile 1 to 3 schools produce more Bachelor passes than Quintile 4 and 5 schools. This reflects
+    volume and limited alternatives, not the collapse of inequality.
+  </p>
+  <div class="image-placeholder">Insert quintile enrolment vs Bachelor pass graph</div>
+  <div class="evidence">
+    Suggested sources:
+    <br />
+    <a href="https://www.education.gov.za" target="_blank">Department of Basic Education</a>
+  </div>
+</section>
+
+<section id="easterncape">
+  <h2>The Eastern Cape Paradox</h2>
+  <p>
+    High distinctions coexist with the lowest overall pass rate, revealing excellence trapped in
+    pockets while failure spreads systemically.
+  </p>
+  <div class="image-placeholder">Insert provincial comparison table or heat map</div>
+  <div class="quote">
+    Averages hide pain. Provinces do not fail evenly.
+  </div>
+</section>
+
+<section id="maths">
+  <h2>The Quiet Retreat from Mathematics</h2>
+  <p>
+    Declining Mathematics enrolment protects short term pass rates while quietly narrowing the
+    country’s future skills base.
+  </p>
+  <div class="image-placeholder">Insert Maths enrolment trend graph</div>
+</section>
+
+<section id="economy">
+  <h2>Education Without Absorption</h2>
+  <p>
+    More Bachelor passes enter an economy unable to absorb them, transforming education from an
+    equaliser into a sorting mechanism.
+  </p>
+  <div class="image-placeholder">Insert Bachelor passes vs youth unemployment chart</div>
+</section>
+
+<section id="ai">
+  <h2>AI and Uneven Advantage</h2>
+  <p>
+    Artificial intelligence assisted some learners, but amplified inequality rather than repairing
+    foundational weaknesses.
+  </p>
+  <div class="image-placeholder">Insert AI learning illustration</div>
+</section>
+
+<section id="conclusion">
+  <h2>What the Numbers Refuse to Answer</h2>
+  <p>
+    The true test of success is not how many pass, but how many are meaningfully absorbed into a
+    just and growing society.
+  </p>
+</section>
+
+</main>
+
+<footer>
+  <p>
+    Written by Ayola Dyantyi | Opinion and Public Thought
+  </p>
+</footer>
+
+</body>
+</html>
